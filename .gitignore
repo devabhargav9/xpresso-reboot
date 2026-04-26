@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build / dist
+dist/
+build/
+.next/
+out/
+
+# Env and secrets
+.env
+.env.*.local
+*.pem
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test / coverage
+coverage/
+
+# Misc
+.turbo
+*.tsbuildinfo
