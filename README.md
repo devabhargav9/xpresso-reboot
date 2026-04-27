@@ -7,7 +7,13 @@ Greenfield build for the next iteration of the platform.
 
 ## Local setup
 
-_Add instructions after the app scaffold is in place._
+**Sales / pitch prototype (interactive product map, ALS + EMS + IMS + platform):**
+
+```bash
+cd sales-prototype && npm install && npm run dev
+```
+
+See `sales-prototype/README.md`.
 
 ## License
 
