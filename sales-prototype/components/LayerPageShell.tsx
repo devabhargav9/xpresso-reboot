@@ -24,8 +24,7 @@ export function LayerPageShell({ layer, children }: Props) {
       <div className={`${banner[layer.accent]} text-white`}>
         <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
           <p className="text-xs font-bold uppercase tracking-widest text-white/80">
-            {layerTheme[layer.code] ?? ""} — {layer.code} ·{" "}
-            {layer.simplified.map((s) => s.label).join(" · ")}
+            {layerTheme[layer.code] ?? ""} — {layer.code}
           </p>
           <h1 className="mt-2 text-2xl font-bold sm:text-3xl">{layer.name}</h1>
           <p className="mt-2 max-w-2xl text-sm text-white/90 sm:text-base">

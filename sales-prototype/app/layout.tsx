@@ -6,7 +6,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "X'Presso — One platform for the institution (Sales Prototype)",
+  title: "X'Presso — One platform for the institution",
   description:
     "One connected platform for teaching, research, student and campus operations, and shared services—explore the product map and full scope.",
 };

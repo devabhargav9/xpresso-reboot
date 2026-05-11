@@ -149,6 +149,7 @@ export const LAYERS: ModuleGroup[] = [
       { label: "Live Classes", slug: "a3" },
       { label: "Adaptive AI", slug: "a4" },
       { label: "Success Tracking", slug: "a5" },
+      { label: "On-demand programs", slug: "odp" },
     ],
     modules: [
       {
@@ -206,6 +207,20 @@ export const LAYERS: ModuleGroup[] = [
           "Early Alerts",
           "Progress Nudges",
           "Academic Risk Detection",
+        ],
+      },
+      {
+        id: "odp",
+        code: "ODP",
+        title: "On-demand programs (ODP)",
+        numbers: [62, 62],
+        items: [
+          "Modular short-duration programs (typically about 2–6 weeks) with structured curriculum, content, assessments, and declared outcomes",
+          "Credit mapping and semester integration with institutional records—not an external content marketplace",
+          "Student discovery, enrollment governed by academic rules, and tracked completion alongside regular offerings",
+          "Delivery that blends asynchronous study with optional live touchpoints; video, assignments, projects, quizzes; sequencing and progress gating",
+          "Credential evidence: completion records and credit eligibility designed to flow toward transcripts and QA packs where policy allows",
+          "Program administration and personalization: publish lifecycle, credit value, modules, assessments, recommendations grounded in institutional profile data",
         ],
       },
     ],

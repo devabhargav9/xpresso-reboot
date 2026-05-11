@@ -18,9 +18,6 @@ export default function FullScopePage() {
       <h1 className="mt-3 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
         {FULL_SCOPE_INTRO.title}
       </h1>
-      <p className="mt-3 text-sm leading-relaxed text-slate-600 sm:text-base">
-        {FULL_SCOPE_INTRO.description}
-      </p>
 
       <div className="mt-8 space-y-10">
         {FULL_SCOPE_SECTIONS.map((sec) => (

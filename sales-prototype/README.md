@@ -1,6 +1,6 @@
 # X'Presso — sales prototype (interactive product map)
 
-This is a **pitch-ready web demo**: one **interactive product map** (learning, knowledge, operations) plus a **core platform** view, and a separate **full product scope** page for the extended checklist. Developer detail: the structured spec lives in `lib/structure.ts` and `lib/full-product-scope.ts` so copy stays in one place.
+Interactive **product map** (operations, learning, knowledge), **core platform**, and **full product scope** checklist. Copy source: `lib/structure.ts`, `lib/full-product-scope.ts`.
 
 ## Run locally
 
@@ -19,8 +19,10 @@ Open [http://localhost:3000](http://localhost:3000). Use **Product map** in the 
 - `/explore/als` | `/ems` | `/ims` — All modules in that layer
 - `/explore/{layer}/{moduleId}` — Module detail with numbered list (e.g. `.../a1`, `.../e5`, `.../i6`)
 - `/explore/ims/attendance` & `/explore/ims/placement` — **I7** and **I8** in the Operations (IMS) layer, same as I1–I6 (long-form story on these two routes). Old paths `/explore/attendance` and `/explore/placement` redirect here.
+- `/explore/als/odp` — **On-demand programs (ODP)** long-form story (credit-linked modular offerings; NEP-aligned framing). Shortcut `/explore/odp` redirects here.
 - `/explore/platform` — Core platform (identity, data, security, communication, AI)
-- `/explore/full-scope` — Full capability catalog (links into attendance & placement from relevant sections)
+- `/explore/nep-alignment` — NEP 2020 policy themes (HE focus) mapped to product problems and hooks
+- `/explore/full-scope` — Full capability catalog (includes ODP section; section numbers continue through compliance)
 
 ## Build
 

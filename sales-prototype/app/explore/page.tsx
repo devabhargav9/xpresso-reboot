@@ -15,10 +15,6 @@ export default function ExplorePage() {
         <p className="mt-1 text-sm font-medium text-slate-700 sm:text-base">
           One platform vision—see how every part of the institution connects.
         </p>
-        <p className="mt-2 text-sm text-slate-600 sm:text-base">
-          Go layer by layer, then open any area to see the full list of what the platform covers
-          there.
-        </p>
       </div>
 
       <div className="relative mt-10 space-y-0">
@@ -101,6 +97,12 @@ export default function ExplorePage() {
           Core platform (identity, data, security, comms, AI)
         </Link>
         <Link
+          href="/explore/nep-alignment"
+          className="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-800 shadow-sm hover:bg-slate-50"
+        >
+          NEP 2020 alignment
+        </Link>
+        <Link
           href="/explore/full-scope"
           className="inline-flex items-center justify-center rounded-xl border border-dashed border-slate-300 bg-slate-50 px-5 py-2.5 text-sm font-semibold text-slate-800 hover:border-slate-400 hover:bg-slate-100"
         >
@@ -113,14 +115,6 @@ export default function ExplorePage() {
           ← Back to overview
         </Link>
         </div>
-        <p className="max-w-xl text-center text-xs text-slate-500">
-          Need the full extended catalog (placement, attendance, admissions, and the rest) in
-          one scroll? Open{" "}
-          <Link href="/explore/full-scope" className="font-medium text-slate-700 hover:underline">
-            Full product scope
-          </Link>
-          .
-        </p>
       </div>
     </div>
   );

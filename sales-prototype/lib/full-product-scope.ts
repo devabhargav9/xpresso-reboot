@@ -12,8 +12,6 @@ export type ScopeSection = {
 
 export const FULL_SCOPE_INTRO = {
   title: "Full product scope",
-  description:
-    "X'Presso is a single platform for the institution: one place for teaching and learning, research and knowledge, student and campus operations, and shared services—not a patchwork of disconnected tools. Use the Product map for the high-level story (operations, learning, knowledge, platform). Use this page when you need the full capability list in one place.",
 } as const;
 
 export const FULL_SCOPE_SECTIONS: ScopeSection[] = [
@@ -84,8 +82,23 @@ export const FULL_SCOPE_SECTIONS: ScopeSection[] = [
     ],
   },
   {
+    id: "odp",
+    title: "6. On-demand programs (ODP)",
+    blurb:
+      "Institution-operated modular programs with credit linkage—not a generic marketplace. Especially relevant where national frameworks emphasize credit mobility and flexible pathways.",
+    items: [
+      "Modular short programs with structured curriculum, assessments, and declared outcomes under HEI governance",
+      "Credit mapping, semester coexistence with core courses, completion and performance tracking toward records",
+      "Student discovery and enrollment governed by academic rules (caps, prerequisites, windows)",
+      "Asynchronous-first delivery with optional live touchpoints; sequencing, gating, integrity-aligned assessment",
+      "Credential evidence and eligibility designed for transcripts and—where adopted—ABC-style credit packets",
+      "Program lifecycle administration: publish, revise, credit value, committees, personalization within policy",
+      "Alignment direction (NEP 2020 themes): flexibility, multidisciplinary exposure, digital access, outcome evidence for QA—not a substitute for statutory regulation",
+    ],
+  },
+  {
     id: "placement",
-    title: "6. Placement & career services",
+    title: "7. Placement & career services",
     items: [
       "Student-facing placement portal (always available from student portal)",
       "Admin posting and management of job openings",
@@ -98,7 +111,7 @@ export const FULL_SCOPE_SECTIONS: ScopeSection[] = [
   },
   {
     id: "ems",
-    title: "7. Education & knowledge management (EMS — aligned with product map)",
+    title: "8. Education & knowledge management (EMS — aligned with product map)",
     items: [
       "Research information management",
       "Grants, funding, research finance",
@@ -109,7 +122,7 @@ export const FULL_SCOPE_SECTIONS: ScopeSection[] = [
   },
   {
     id: "enterprise",
-    title: "8. Enterprise operations (ERP / admin)",
+    title: "9. Enterprise operations (ERP / admin)",
     items: [
       "Finance and accounting",
       "Procurement and vendor management",
@@ -121,7 +134,7 @@ export const FULL_SCOPE_SECTIONS: ScopeSection[] = [
   },
   {
     id: "campus",
-    title: "9. Campus and institutional operations",
+    title: "10. Campus and institutional operations",
     items: [
       "Facilities management",
       "Room scheduling",
@@ -132,7 +145,7 @@ export const FULL_SCOPE_SECTIONS: ScopeSection[] = [
   },
   {
     id: "data",
-    title: "10. Data, analytics, and intelligence",
+    title: "11. Data, analytics, and intelligence",
     items: [
       "Data warehouse or lakehouse",
       "Business intelligence dashboards",
@@ -143,7 +156,7 @@ export const FULL_SCOPE_SECTIONS: ScopeSection[] = [
   },
   {
     id: "integration",
-    title: "11. Integration & API platform",
+    title: "12. Integration & API platform",
     items: [
       "API gateway and management",
       "Integration middleware (iPaaS / ESB-style)",
@@ -153,7 +166,7 @@ export const FULL_SCOPE_SECTIONS: ScopeSection[] = [
   },
   {
     id: "infra",
-    title: "12. Infrastructure, security, and reliability",
+    title: "13. Infrastructure, security, and reliability",
     items: [
       "Cloud and capacity management (as product or policy)",
       "Network and operations visibility",
@@ -163,7 +176,7 @@ export const FULL_SCOPE_SECTIONS: ScopeSection[] = [
   },
   {
     id: "comms",
-    title: "13. Communication and engagement (cross-cutting)",
+    title: "14. Communication and engagement (cross-cutting)",
     items: [
       "Announcements, in-app and email/SMS notifications",
       "Audience targeting (role, program, batch); communication logging",
@@ -171,7 +184,7 @@ export const FULL_SCOPE_SECTIONS: ScopeSection[] = [
   },
   {
     id: "compliance",
-    title: "14. Compliance, trust, and quality",
+    title: "15. Compliance, trust, and quality",
     items: [
       "Audit logs for critical actions",
       "Data retention and records policy controls; consent and privacy",
@@ -181,7 +194,7 @@ export const FULL_SCOPE_SECTIONS: ScopeSection[] = [
   },
   {
     id: "extended",
-    title: "15. Often phased after first launch",
+    title: "16. Often phased after first launch",
     items: [
       "Alumni and advancement",
       "Scholarships and financial aid (dedicated module)",

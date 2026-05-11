@@ -4,6 +4,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/explore", label: "Product map" },
   { href: "/explore/platform", label: "Core platform" },
+  { href: "/explore/nep-alignment", label: "NEP 2020" },
   { href: "/explore/full-scope", label: "Full scope" },
 ] as const;
 
@@ -18,9 +19,6 @@ export function SiteHeader() {
           >
             X&apos;Presso
           </Link>
-          <p className="mt-0.5 hidden max-w-xs text-[11px] leading-snug text-slate-500 sm:block">
-            One platform for all institutional educational needs
-          </p>
         </div>
         <nav className="flex flex-wrap items-center justify-end gap-1 sm:gap-2">
           {links.map((l) => (

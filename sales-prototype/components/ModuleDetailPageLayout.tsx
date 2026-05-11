@@ -46,21 +46,13 @@ export function ModuleDetailPageLayout({
           </Link>
         </p>
 
-        <div className="mt-6 rounded-2xl border border-brand-200/80 bg-brand-50/50 p-4 sm:p-5">
-          <h2 className="text-sm font-bold uppercase tracking-wide text-brand-800">
-            How it fits the single platform
-          </h2>
-          <ul className="mt-2 space-y-1.5 text-sm text-slate-700">
+        {howItFits.length > 0 ? (
+          <ul className="mt-6 space-y-1.5 border-l-2 border-slate-200 pl-4 text-sm text-slate-700">
             {howItFits.map((line) => (
-              <li key={line} className="flex gap-2">
-                <span className="text-brand-500" aria-hidden>
-                  →
-                </span>
-                <span>{line}</span>
-              </li>
+              <li key={line}>{line}</li>
             ))}
           </ul>
-        </div>
+        ) : null}
 
         <div className="mt-8 space-y-8">
           {sections.map((s) => (
@@ -76,13 +68,6 @@ export function ModuleDetailPageLayout({
         </div>
 
         <p className="mt-10 text-sm leading-relaxed text-slate-600">{outro}</p>
-
-        <p className="mt-6 text-sm text-slate-500">
-          <Link href="/explore/full-scope" className="font-medium text-brand-600 hover:underline">
-            Full product scope
-          </Link>{" "}
-          lists this alongside every other area.
-        </p>
       </div>
     </div>
   );

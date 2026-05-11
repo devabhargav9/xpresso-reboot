@@ -13,6 +13,11 @@ const nextConfig: NextConfig = {
         destination: "/explore/ims/placement",
         permanent: true,
       },
+      {
+        source: "/explore/odp",
+        destination: "/explore/als/odp",
+        permanent: true,
+      },
     ];
   },
 };

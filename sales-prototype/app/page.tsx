@@ -20,17 +20,6 @@ export default function HomePage() {
             in one product map
           </span>
         </h1>
-        <p className="mx-auto mt-3 max-w-2xl text-center text-base font-medium text-slate-800 sm:text-lg">
-          A single, connected platform—not a patchwork of siloed tools. Teaching, research,
-          student lifecycle, finance, people, and campus, unified under one identity and one
-          data backbone.
-        </p>
-        <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-slate-600 sm:text-base">
-          <strong>IMS</strong> is how the organization runs; <strong>ALS</strong> is individual
-          learning; <strong>EMS</strong> is institutional knowledge. Together with the
-          <strong> core platform</strong> (identity, integration, data, security), you see
-          the full story in one place.
-        </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
           <Link
             href="/explore"
@@ -135,18 +124,6 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-        <p className="mt-6 text-center text-xs text-slate-500">
-          One platform, shown as operations, learning, and knowledge—plus a shared core for
-          identity, data, and security.
-        </p>
-      </section>
-      <section className="border-t border-slate-200/80 bg-slate-50/80 py-8 text-center text-sm text-slate-600">
-        <p className="mx-auto max-w-2xl px-4">
-          <strong>Why one platform:</strong> students, faculty, and staff don’t juggle
-          a dozen logins. Data flows to analytics, compliance, and placement in one
-          system-of-record view—siloed &ldquo;best-of-breed&rdquo; stacks can&apos;t
-          offer that without heavy integration.
-        </p>
       </section>
     </div>
   );

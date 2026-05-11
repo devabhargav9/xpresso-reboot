@@ -8,10 +8,8 @@ export default function PlatformPage() {
         <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
           <h1 className="text-2xl font-bold sm:text-3xl">Core platform (cross-layer)</h1>
           <p className="mt-2 max-w-2xl text-sm text-slate-300 sm:text-base">
-            The glue that makes this a <strong>single platform</strong>: services shared
-            by <strong>IMS + ALS + EMS</strong>—identity, communication, data, integration,
-            infrastructure, and security—so the institution is not held together by ad-hoc
-            point-to-point tools.
+            Shared services for <strong>IMS + ALS + EMS</strong>: identity, communication,
+            data, integration, infrastructure, security.
           </p>
         </div>
       </div>
@@ -44,10 +42,6 @@ export default function PlatformPage() {
             </div>
           ))}
         </div>
-        <p className="mt-8 text-center text-xs text-slate-500">
-          In practice, this is usually one control plane: identity, integration hub, data, and
-          security—not many separate admin consoles.
-        </p>
       </div>
     </div>
   );
