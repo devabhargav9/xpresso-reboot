@@ -2,8 +2,10 @@ import Link from "next/link";
 import { Wordmark } from "./Wordmark";
 
 const NAV = [
+  { label: "Home", href: "/" },
   { label: "Demos", href: "/demo" },
   { label: "Explore", href: "/explore" },
+  { label: "ODP", href: "/odp" },
   { label: "Compliance", href: "/compliance" },
   { label: "Differentiation", href: "/differentiation" },
   { label: "Stakeholders", href: "/stakeholders" },

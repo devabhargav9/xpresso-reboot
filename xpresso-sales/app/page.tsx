@@ -1,16 +1,17 @@
 import Link from "next/link";
-import { ArrowRight, Sparkles, ShieldCheck, Layers } from "lucide-react";
+import { ArrowRight, Sparkles, ShieldCheck, Layers, Zap } from "lucide-react";
 import { Container } from "@/components/Container";
 import { PyramidHero } from "@/components/PyramidHero";
 import { DemoTile } from "@/components/DemoTile";
 import { Pill } from "@/components/Pill";
-import { alsDemos, emsDemos } from "@/lib/demos";
+import { alsDemos, emsDemos, odpDemos } from "@/lib/demos";
 import { LAYERS } from "@/lib/catalog";
 import { FRAMEWORKS } from "@/lib/types";
 
 export default function Home() {
   const als = alsDemos();
   const ems = emsDemos();
+  const odp = odpDemos();
 
   return (
     <>
@@ -19,20 +20,20 @@ export default function Home() {
           <div className="grid gap-10 py-12 sm:py-16 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
             <div className="flex flex-col gap-6">
               <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-[12px] font-semibold text-indigo-700">
-                <Sparkles className="h-3.5 w-3.5" /> One platform · three layers · live compliance
+                <Sparkles className="h-3.5 w-3.5" /> Three layers · two cross-cutting capabilities · one product
               </span>
               <h1 className="text-4xl font-semibold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl">
                 One platform for the whole higher-education institution.
               </h1>
               <p className="max-w-2xl text-[16px] leading-relaxed text-slate-600 sm:text-[17px]">
-                Adaptive learning on top, knowledge engine in the middle, institution OS at the base — and a live compliance command center across all of it.
+                ALS adapts to every learner, EMS authors the knowledge they consume, IMS runs the institution beneath it — with ODP and Compliance Autopilot cutting across all three.
               </p>
               <div className="flex flex-wrap items-center gap-3">
                 <Link
                   href="/demo"
                   className="inline-flex items-center gap-1.5 rounded-md bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700"
                 >
-                  See the 8 demos <ArrowRight className="h-4 w-4" />
+                  See the 9 demos <ArrowRight className="h-4 w-4" />
                 </Link>
                 <Link
                   href="/compliance"
@@ -66,13 +67,13 @@ export default function Home() {
           <div className="flex flex-wrap items-end justify-between gap-3">
             <div>
               <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-indigo-600">
-                Eight live demos
+                Nine live demos
               </span>
               <h2 className="mt-1.5 text-2xl font-semibold tracking-tight text-slate-900 sm:text-[26px]">
-                4 ALS + 4 EMS — every cutting-edge moment as a clickable simulation.
+                4 ALS + 4 EMS + 1 flagship ODP — every cutting-edge moment as a clickable simulation.
               </h2>
               <p className="mt-2 max-w-3xl text-sm text-slate-600 sm:text-[15px]">
-                ALS demos tell the story of how a student learns. EMS demos tell the story of how knowledge is created and improves. Each demo is a small scripted flow with mock data.
+                ALS demos tell the story of how a student learns. EMS demos tell the story of how knowledge is created and improves. The flagship ODP demo shows all three layers + compliance working together. Each demo is a small scripted flow with mock data.
               </p>
             </div>
             <Link
@@ -107,6 +108,20 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div className="mt-10 flex flex-col gap-4">
+            <div className="flex items-center gap-2">
+              <Pill tone="indigo">ODP · Cross-cutting flagship</Pill>
+              <span className="text-[12px] text-slate-500">
+                Uses ALS twin + EMS atoms + IMS credit + Compliance, all in one flow.
+              </span>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {odp.map((d) => (
+                <DemoTile key={d.slug} demo={d} />
+              ))}
+            </div>
+          </div>
         </Container>
       </section>
 
@@ -118,7 +133,7 @@ export default function Home() {
                 <ShieldCheck className="h-3.5 w-3.5" /> Compliance, built in
               </span>
               <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-[26px]">
-                AQAR, SSR, SAR, AISHE — assembled from live data, not from forms.
+                AQAR (Annual Quality Assurance Report), SSR (Self-Study Report), SAR (Self-Assessment Report), AISHE — assembled from live data, not from forms.
               </h2>
               <p className="text-[15px] text-slate-600">
                 Eight compliance categories covering NAAC, NIRF, AISHE, NBA, UGC, and AICTE — fed continuously by IMS, EMS, and ALS. No re-entry, no audit-season panic.
@@ -141,7 +156,7 @@ export default function Home() {
               {[
                 { title: "Live criterion coverage", body: "Red/amber/green per criterion across NAAC, NIRF, NBA — refreshed continuously." },
                 { title: "8 × 6 category matrix", body: "Eight compliance categories mapped to six frameworks — no spreadsheet juggling." },
-                { title: "Evidence repository", body: "Auto-organized by criterion. DVV-ready packs in clicks, not weeks." },
+                { title: "Evidence repository", body: "Auto-organized by criterion. DVV (Data Validation and Verification)-ready packs in clicks, not weeks." },
                 { title: "One-click accreditation packs", body: "Generate AQAR, SSR, SAR, AISHE filings on demand." },
               ].map((card) => (
                 <div
@@ -152,6 +167,52 @@ export default function Home() {
                   <p className="mt-1 text-[13px] leading-relaxed text-slate-600">
                     {card.body}
                   </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="py-14 sm:py-16">
+        <Container>
+          <div className="grid gap-8 lg:grid-cols-[1.2fr_1fr] lg:gap-12">
+            <div className="flex flex-col gap-3">
+              <span className="inline-flex w-fit items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-indigo-600">
+                <Zap className="h-3.5 w-3.5" /> ODP — curriculum agility
+              </span>
+              <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-[26px]">
+                Ship a new credit-linked program in weeks — not three years.
+              </h2>
+              <p className="text-[15px] text-slate-600">
+                ODP plugs into the university as a modular academic layer. Students enroll in short-duration, credit-linked programs in emerging fields — without the institution creating new departments or hiring faculty. Atoms from regular courses are reused; the cognitive twin personalizes from day one; credit hits the transcript and ABC (Academic Bank of Credits).
+              </p>
+              <div className="mt-2 flex flex-wrap items-center gap-2">
+                <Pill tone="indigo">NEP 2020 (National Education Policy)</Pill>
+                <Pill tone="indigo">Academic Bank of Credits</Pill>
+                <Pill tone="indigo">NSQF (National Skills Qualifications Framework)</Pill>
+                <Pill tone="indigo">Real institutional credit</Pill>
+              </div>
+              <Link
+                href="/odp"
+                className="mt-3 inline-flex w-fit items-center gap-1.5 rounded-md bg-indigo-600 px-3.5 py-2 text-sm font-semibold text-white hover:bg-indigo-700"
+              >
+                See how ODP couples with the platform <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {[
+                { title: "Atoms reused", body: "Same atom serves a Calculus class and an 'AI for Finance' ODP. Author once; v2 helps both." },
+                { title: "Twin works day one", body: "Personalization starts at minute one — no cold start, no generic onboarding." },
+                { title: "Real credit", body: "Completion writes to the official transcript and ABC, not just a PDF certificate." },
+                { title: "Career-driven", body: "Career simulator recommends the 2–4 ODPs that close the student's biggest placement gaps." },
+              ].map((card) => (
+                <div
+                  key={card.title}
+                  className="rounded-xl border border-slate-200 bg-white p-4"
+                >
+                  <h3 className="text-sm font-semibold text-slate-900">{card.title}</h3>
+                  <p className="mt-1 text-[13px] leading-relaxed text-slate-600">{card.body}</p>
                 </div>
               ))}
             </div>

@@ -56,9 +56,11 @@ export interface Layer {
   modules: CatalogModule[];
 }
 
+export type DemoLayer = "ALS" | "EMS" | "ODP";
+
 export interface Demo {
   slug: string;
-  layer: "ALS" | "EMS";
+  layer: DemoLayer;
   num: number;
   title: string;
   wow: string;

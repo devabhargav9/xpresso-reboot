@@ -14,19 +14,21 @@ Dev server: [http://localhost:3100](http://localhost:3100).
 
 ## What's in here
 
-- `/` — Landing with pyramid hero, 8 demo tiles (ALS · EMS), compliance teaser, catalog teaser, differentiation teaser
-- `/demo` — Demos hub, two strips of 4 tiles each
+- `/` — Landing with pyramid hero (ODP band on top, Compliance band on bottom), 9 demo tiles (ALS · EMS · ODP), ODP teaser, compliance teaser, catalog teaser, differentiation teaser
+- `/demo` — Demos hub, three strips: 4 ALS + 4 EMS + 1 ODP cross-cutting flagship
 - `/demo/als/{profile|adaptive-path|ai-tutor|effort-fair-assessment}` — ALS demo stubs (interactive sims land in M2 / M5 / M7 / M9)
 - `/demo/ems/{atom-authoring|knowledge-graph|faculty-copilot|heatmap-loop}` — EMS demo stubs (M3 / M6 / M8 / M10)
+- `/demo/odp/career-recommender` — ODP cross-cutting demo stub (M11)
 - `/explore` — Catalog hub (ALS · EMS · IMS)
-- `/explore/{als|ems|ims}` — Layer pages with expandable module cards, every feature listed with compliance and stakeholder tags
+- `/explore/{als|ems|ims}` — Layer pages with expandable module cards. ODP cross-cutting surface: student side in ALS (`on-demand-programs`), authoring in EMS (`odp-authoring`), credit/integration in IMS (`odp-integration`).
+- `/odp` — Dedicated ODP page: pitch, coupling story, 5 killer features, MOOC contrast, NEP/ABC framing
 - `/compliance` — Compliance Command Center preview (full interactive ships in M4)
-- `/differentiation` — vs LMS / vs ERP / vs compliance tool
+- `/differentiation` — vs LMS / vs ERP / vs MOOC platforms / vs compliance tool
 - `/stakeholders` — Eight stakeholder lenses
 
 ## Build milestones
 
-- **M1 — Scaffold + landing + nav + catalog + differentiation** (shipped)
+- **M1 — Scaffold + landing + nav + catalog + differentiation + ODP page + Compliance preview** (shipped)
 - M2 — ALS Demo 2 — Adaptive Path + Multi-modal Twin
 - M3 — EMS Demo 1 — Atom Authoring + Multi-modal Generation Factory
 - M4 — Compliance Command Center (interactive)
@@ -36,7 +38,8 @@ Dev server: [http://localhost:3100](http://localhost:3100).
 - M8 — EMS Demo 3 — Faculty AI Co-Pilot
 - M9 — ALS Demo 4 — Effort-fair AI-aware Assessment
 - M10 — EMS Demo 4 — Live Mastery Heatmap → Atom Rewrite Loop
-- M11 — Stakeholder lens (interactive) + polish
+- M11 — ODP flagship — Career-driven Recommender + 1-click Enrollment + Predicted Completion
+- M12 — Stakeholder lens (interactive) + polish
 
 ## Stack
 

@@ -147,20 +147,40 @@ export const LAYERS: Layer[] = [
       },
       {
         id: "on-demand-programs",
-        title: "On-demand Programs (ODP)",
-        tagline: "Modular short programs (2–6 weeks) with credit mapping.",
+        title: "On-demand Programs (student surface)",
+        tagline: "Discover, enroll, learn. ODP is a cross-cutting capability — student side lives here.",
         features: [
           {
-            name: "Short modular programs",
-            what: "Curated atom sequences delivered as credit-linked short courses.",
-            frameworks: ["NAAC", "UGC"],
+            name: "ODP discovery & catalog",
+            what: "Browseable catalog of ODPs filtered by interest, branch, credit value, time per week, and predicted completion.",
+            stakeholders: ["Student"],
+          },
+          {
+            name: "Career-driven recommender",
+            what: "Cognitive twin + IMS placement + EMS curriculum → 2–4 ODPs ranked by closing-the-gap leverage for your target role.",
+            demoSlug: "odp/career-recommender",
             stakeholders: ["Student", "Dept Head"],
           },
           {
-            name: "Completion records",
-            what: "Signed completion records and credit eligibility for transcripts and QA packs.",
+            name: "1-click enrollment with clash detection",
+            what: "Semester-aware enrollment that checks clashes, fees, scholarship eligibility, and credit caps.",
             frameworks: ["NAAC", "UGC"],
             stakeholders: ["Student", "Admin"],
+          },
+          {
+            name: "ODP learning dashboard",
+            what: "Progress, pace, predicted completion, AI tutor that knows both your regular courses and the ODP.",
+            stakeholders: ["Student"],
+          },
+          {
+            name: "Progress gating & sequencing",
+            what: "Atoms unlock as prereqs are mastered; configurable strict / soft gating per program.",
+            stakeholders: ["Student", "Faculty"],
+          },
+          {
+            name: "Pace tracking",
+            what: "Forgetting-curve scheduling, attention/load signals, and risk alerts adapted to the short-program rhythm.",
+            stakeholders: ["Student"],
           },
         ],
       },
@@ -225,8 +245,8 @@ export const LAYERS: Layer[] = [
       },
       {
         id: "graph",
-        title: "Knowledge Graph & OBE (demo)",
-        tagline: "Institution's curriculum as a navigable graph; CO–PO falls out for free.",
+        title: "Knowledge Graph & OBE (Outcome-Based Education) (demo)",
+        tagline: "Institution's curriculum as a navigable graph; CO–PO (Course Outcomes → Program Outcomes) falls out for free.",
         features: [
           {
             name: "Knowledge Graph Explorer",
@@ -244,7 +264,7 @@ export const LAYERS: Layer[] = [
           },
           {
             name: "NEP / NSQF outcome mapping",
-            what: "National policy mappings as graph attributes — exports for policy reporting.",
+            what: "National Education Policy (NEP) and National Skills Qualifications Framework (NSQF) mappings as graph attributes — exports for policy reporting.",
             frameworks: ["NAAC", "UGC", "AICTE"],
             stakeholders: ["IQAC", "Principal"],
           },
@@ -279,6 +299,40 @@ export const LAYERS: Layer[] = [
             name: "Atom rewrite loop",
             what: "Edit the atom with the misconception pre-loaded; v2 publishes back to ALS automatically.",
             demoSlug: "ems/heatmap-loop",
+            stakeholders: ["Faculty"],
+          },
+        ],
+      },
+      {
+        id: "odp-authoring",
+        title: "ODP Program Assembly (authoring side)",
+        tagline: "Compose modular short programs from existing atoms — same library as regular courses.",
+        features: [
+          {
+            name: "Program builder",
+            what: "Drag atoms from the knowledge graph into a 2–6 week sequence; set duration, modules, credit value, outcomes.",
+            stakeholders: ["Faculty", "Dept Head", "IQAC"],
+          },
+          {
+            name: "Credit & NEP metadata",
+            what: "Tag programs with NEP credit value, NSQF level, multidisciplinary basket, and ABC eligibility.",
+            frameworks: ["NAAC", "UGC", "AICTE"],
+            stakeholders: ["Dept Head", "IQAC"],
+          },
+          {
+            name: "Reused atoms across regular + ODP",
+            what: "Author once, deploy in both regular courses and ODPs. v2 of any atom benefits both surfaces.",
+            stakeholders: ["Faculty"],
+          },
+          {
+            name: "Program lifecycle & approvals",
+            what: "Draft → committee review → approval → publish; full audit trail for accreditation.",
+            frameworks: ["NAAC", "UGC"],
+            stakeholders: ["IQAC", "Dept Head"],
+          },
+          {
+            name: "Program-level rubrics & projects",
+            what: "Faculty co-pilot drafts rubrics, projects, and quiz banks for the ODP from its declared outcomes.",
             stakeholders: ["Faculty"],
           },
         ],
@@ -446,6 +500,43 @@ export const LAYERS: Layer[] = [
             name: "Degree planning / advising",
             what: "What-if planner across electives and ODPs.",
             stakeholders: ["Student", "Dept Head"],
+          },
+        ],
+      },
+      {
+        id: "odp-integration",
+        title: "ODP Integration (credit & records)",
+        tagline: "Where ODPs become real institutional credit — transcript, ABC, placement eligibility.",
+        features: [
+          {
+            name: "ODP credit mapping",
+            what: "Map ODP completions to credit values in the university's existing credit system. Semester-aware caps and rules.",
+            frameworks: ["NAAC", "UGC"],
+            stakeholders: ["Admin", "Dept Head", "IQAC"],
+          },
+          {
+            name: "Transcript inclusion",
+            what: "Completed ODPs appear on the official transcript like any other course — not as an external certificate.",
+            frameworks: ["NAAC", "UGC"],
+            stakeholders: ["Student", "Admin"],
+          },
+          {
+            name: "Academic Bank of Credits (ABC) export",
+            what: "Push completion records to the national ABC repository for portability across institutions.",
+            frameworks: ["UGC"],
+            stakeholders: ["Admin", "Student"],
+          },
+          {
+            name: "ODP fees & scholarships",
+            what: "Fee structures, scholarship eligibility, and dues handled by the same finance module as regular courses.",
+            frameworks: ["UGC"],
+            stakeholders: ["Admin", "Student"],
+          },
+          {
+            name: "Placement eligibility update",
+            what: "ODP completions auto-update placement eligibility filters — students see new openings as they finish programs.",
+            frameworks: ["NAAC", "NIRF"],
+            stakeholders: ["Student", "Admin"],
           },
         ],
       },

@@ -86,7 +86,7 @@ export const DEMOS: Demo[] = [
     layer: "EMS",
     num: 6,
     title: "Knowledge Graph Explorer (with OBE / CO–PO live)",
-    wow: "The institution's curriculum as a navigable graph — and CO–PO attainment falls out of it for free.",
+    wow: "The institution's curriculum as a navigable graph — and CO–PO (Course Outcomes → Program Outcomes) attainment falls out of it for free.",
     steps: [
       "Open the institution's knowledge graph. Filter by department, course, or program.",
       "Click a concept node: see its atoms, prereqs, leads-to chain, and which courses use it.",
@@ -129,7 +129,27 @@ export const DEMOS: Demo[] = [
     milestone: 10,
     status: "planned",
   },
+  {
+    slug: "odp/career-recommender",
+    layer: "ODP",
+    num: 9,
+    title: "Career-driven ODP Recommender + 1-click Enrollment",
+    wow: "ODPs you actually need — based on your twin, your placement target, and your real skill gaps. Real institutional credit, not external certificates.",
+    steps: [
+      "Student picks a target role — e.g. 'Data Analyst — Banking sector'.",
+      "Career simulator reads the cognitive twin + current mastery vector + IMS placement data for that role → produces a skill-gap radar.",
+      "System recommends 2–4 ODPs ranked by closing-the-gap leverage. Each shows: predicted completion likelihood, projected mastery delta, credit value, time per week, NEP credit mapping.",
+      "Student clicks 1-click enroll. The system runs semester clash detection, confirms fees/scholarship eligibility, and adds the ODP to the dashboard.",
+      "On completion, credit hits the transcript + Academic Bank of Credits (ABC), and placement eligibility filters update automatically.",
+    ],
+    milestone: 11,
+    status: "planned",
+  },
 ];
+
+export function odpDemos() {
+  return DEMOS.filter((d) => d.layer === "ODP").sort((a, b) => a.num - b.num);
+}
 
 export function getDemo(slug: string) {
   return DEMOS.find((d) => d.slug === slug);

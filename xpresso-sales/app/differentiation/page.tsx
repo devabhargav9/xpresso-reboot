@@ -48,7 +48,7 @@ export default function DifferentiationPage() {
               rightHeader="Xpresso IMS"
               rows={[
                 ["Separate modules with brittle integrations.", "One platform — shared identity, shared data, one event bus."],
-                ["Compliance reports exported once a year, manually.", "Compliance is live; AQAR / SSR / SAR are queries."],
+                ["Compliance reports exported once a year, manually.", "Compliance is live; AQAR (Annual Quality Assurance Report) / SSR (Self-Study Report) / SAR (Self-Assessment Report) are queries."],
                 ["Faculty / student / admin in siloed tools.", "One product, eight stakeholder lenses."],
                 ["Static dashboards.", "Dashboards driven by real-time mastery, attendance, placement signals."],
                 ["No connection to learning.", "Tightly wired to ALS + EMS — placement reads mastery, not just CGPA."],
@@ -59,7 +59,28 @@ export default function DifferentiationPage() {
 
         <section className="mt-12">
           <h2 className="text-base font-semibold uppercase tracking-widest text-slate-500">
-            vs. a typical compliance / IQAC tool
+            vs. external short-course platforms — ODP contrast
+          </h2>
+          <div className="mt-3">
+            <ContrastTable
+              leftHeader="Coursera / edX / upGrad"
+              rightHeader="Xpresso ODP"
+              rows={[
+                ["External content marketplace.", "Institution-owned academic infrastructure."],
+                ["External certificate.", "Real institutional credit + transcript + Academic Bank of Credits."],
+                ["Generic content, same for every student.", "Adaptive delivery from day one via the existing cognitive twin."],
+                ["Detached from regular curriculum.", "Atoms reused across regular and ODP; one knowledge graph."],
+                ["No prereq awareness across the student's history.", "AI tutor knows what the student already mastered in regular courses."],
+                ["Compliance left to the student / employer.", "NEP (National Education Policy) / NSQF (National Skills Qualifications Framework) / UGC / NAAC mappings auto-generated."],
+                ["Outcome = a certificate.", "Outcome = a credit that affects degree progression and placement eligibility."],
+              ]}
+            />
+          </div>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="text-base font-semibold uppercase tracking-widest text-slate-500">
+            vs. a typical compliance / IQAC (Internal Quality Assurance Cell) tool
           </h2>
           <div className="mt-3">
             <ContrastTable
@@ -69,9 +90,9 @@ export default function DifferentiationPage() {
                 ["Form-driven; staff re-enters data they already have.", "Evidence is pulled live from IMS / EMS / ALS — no re-entry."],
                 ["One framework per tool.", "Single matrix across NAAC, NIRF, AISHE, NBA, UGC, AICTE."],
                 ["Coverage known only at audit time.", "Live coverage % per criterion, all year round."],
-                ["DVV / evidence chase is manual.", "Evidence repository auto-organized by criterion + sub-point."],
+                ["DVV (Data Validation and Verification) / evidence chase is manual.", "Evidence repository auto-organized by criterion + sub-point."],
                 ["Anomalies surface during inspection.", "Anomalies flagged early with one-step fix paths."],
-                ["CO–PO mapping in spreadsheets.", "CO–PO falls out of the knowledge graph automatically."],
+                ["CO–PO (Course Outcomes → Program Outcomes) mapping in spreadsheets.", "CO–PO falls out of the knowledge graph automatically."],
               ]}
             />
           </div>

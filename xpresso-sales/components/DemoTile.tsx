@@ -7,7 +7,11 @@ export function DemoTile({ demo }: { demo: Demo }) {
   const accent =
     demo.layer === "ALS"
       ? "from-emerald-50 to-white border-emerald-200 hover:border-emerald-300"
-      : "from-violet-50 to-white border-violet-200 hover:border-violet-300";
+      : demo.layer === "EMS"
+        ? "from-violet-50 to-white border-violet-200 hover:border-violet-300"
+        : "from-indigo-50 to-white border-indigo-200 hover:border-indigo-300";
+  const pillTone =
+    demo.layer === "ALS" ? "als" : demo.layer === "EMS" ? "ems" : "indigo";
 
   return (
     <Link
@@ -16,7 +20,7 @@ export function DemoTile({ demo }: { demo: Demo }) {
     >
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <Pill tone={demo.layer === "ALS" ? "als" : "ems"}>{demo.layer} · Demo {demo.num}</Pill>
+          <Pill tone={pillTone}>{demo.layer} · Demo {demo.num}</Pill>
         </div>
         <ArrowUpRight className="h-4 w-4 text-slate-400 group-hover:text-slate-700" />
       </div>

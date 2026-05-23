@@ -25,14 +25,14 @@ const LENS: Record<
       "Live mastery heatmap per course",
       "Misconception nudges with 1-click atom edit",
       "Timetable and live classroom",
-      "Publications, citations, FDP tracking",
+      "Publications, citations, FDP (Faculty Development Programme) tracking",
     ],
   },
   "Dept Head": {
     title: "Dept Head",
     whatTheySee: "Department health: outcomes, faculty, placement, accreditation.",
     keyWidgets: [
-      "Course outcomes and CO–PO attainment",
+      "Course outcomes and CO–PO (Course Outcomes → Program Outcomes) attainment",
       "Faculty workload and FDP coverage",
       "Placement feed and program-level trends",
       "Budgets and expense at department level",
@@ -40,13 +40,13 @@ const LENS: Record<
     ],
   },
   IQAC: {
-    title: "IQAC",
+    title: "IQAC (Internal Quality Assurance Cell)",
     whatTheySee: "Compliance, evidence, and accreditation packs — always audit-ready.",
     keyWidgets: [
       "Coverage % by framework (NAAC, NIRF, NBA, AISHE, UGC, AICTE)",
       "Evidence repository auto-organized by criterion",
-      "AQAR, SSR, SAR builder",
-      "DVV workspace and queries",
+      "AQAR (Annual Quality Assurance Report), SSR (Self-Study Report), SAR (Self-Assessment Report) builder",
+      "DVV (Data Validation and Verification) workspace and queries",
       "Anomalies with one-step fix paths",
     ],
   },

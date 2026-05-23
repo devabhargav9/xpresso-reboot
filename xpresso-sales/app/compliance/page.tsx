@@ -15,7 +15,7 @@ export default function CompliancePage() {
             <ShieldCheck className="h-3.5 w-3.5" /> Compliance Command Center
           </span>
           <h1 className="mt-1.5 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-            AQAR, SSR, SAR, AISHE — assembled from live data, not from forms.
+            AQAR (Annual Quality Assurance Report), SSR (Self-Study Report), SAR (Self-Assessment Report), AISHE — assembled from live data, not from forms.
           </h1>
           <p className="mt-3 text-[15px] leading-relaxed text-slate-600">
             Eight compliance categories, six frameworks, one live matrix. Every category is fed continuously by IMS, EMS, and ALS — no re-entry, no audit-season panic. The interactive command center ships in milestone M4; this page previews what it covers.

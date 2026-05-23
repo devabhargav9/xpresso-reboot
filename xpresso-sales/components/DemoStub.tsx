@@ -16,7 +16,7 @@ export function DemoStub({ demo }: { demo: Demo }) {
         </Link>
 
         <div className="mt-5 flex flex-wrap items-center gap-2">
-          <Pill tone={demo.layer === "ALS" ? "als" : "ems"}>
+          <Pill tone={demo.layer === "ALS" ? "als" : demo.layer === "EMS" ? "ems" : "indigo"}>
             {demo.layer} · Demo {demo.num}
           </Pill>
           <Pill tone="soft">Milestone M{demo.milestone}</Pill>

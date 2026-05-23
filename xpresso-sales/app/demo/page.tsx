@@ -1,23 +1,24 @@
 import { Container } from "@/components/Container";
 import { DemoTile } from "@/components/DemoTile";
 import { Pill } from "@/components/Pill";
-import { alsDemos, emsDemos } from "@/lib/demos";
+import { alsDemos, emsDemos, odpDemos } from "@/lib/demos";
 
 export default function DemosHub() {
   const als = alsDemos();
   const ems = emsDemos();
+  const odp = odpDemos();
   return (
     <Container>
       <div className="py-12 sm:py-16">
         <div className="max-w-3xl">
           <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-indigo-600">
-            Eight live demos
+            Live demos
           </span>
           <h1 className="mt-1.5 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
             Click any tile to walk a cutting-edge moment.
           </h1>
           <p className="mt-3 text-[15px] leading-relaxed text-slate-600">
-            Each demo is a scripted simulation with mock data and smooth interactions. The list below shows where each demo lands in the build sequence — earlier milestones are pitchable sooner.
+            Eight ALS + EMS demos plus a flagship cross-cutting ODP demo. Each is a scripted simulation with mock data. The list shows where each demo lands in the build sequence — earlier milestones are pitchable sooner.
           </p>
         </div>
 
@@ -44,6 +45,20 @@ export default function DemosHub() {
           </div>
           <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {ems.map((d) => (
+              <DemoTile key={d.slug} demo={d} />
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-12">
+          <div className="flex flex-wrap items-center gap-3">
+            <Pill tone="indigo">ODP · Curriculum agility (cross-cutting)</Pill>
+            <span className="text-[13px] text-slate-500">
+              Uses ALS twin + EMS atoms + IMS credit + Compliance, all at once.
+            </span>
+          </div>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {odp.map((d) => (
               <DemoTile key={d.slug} demo={d} />
             ))}
           </div>
