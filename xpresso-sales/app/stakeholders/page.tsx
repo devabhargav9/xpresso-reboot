@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/Container";
 import { Pill } from "@/components/Pill";
 import { STAKEHOLDERS } from "@/lib/types";
@@ -110,6 +112,13 @@ export default function StakeholdersPage() {
           <p className="mt-3 text-[15px] leading-relaxed text-slate-600">
             Every buyer at the table sees themselves represented. Below is what each of the eight stakeholders would see in their version of Xpresso. The interactive lens-switcher ships in milestone M11.
           </p>
+          <Link
+            href="/dashboards"
+            className="mt-4 inline-flex items-center gap-1.5 rounded-md border border-indigo-200 bg-indigo-50 px-3 py-1.5 text-sm font-semibold text-indigo-700 hover:bg-indigo-100"
+          >
+            See each stakeholder's actual dashboard mockup
+            <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
 
         <div className="mt-10 grid gap-3 md:grid-cols-2 lg:grid-cols-2">

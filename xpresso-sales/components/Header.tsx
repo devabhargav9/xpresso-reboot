@@ -8,6 +8,7 @@ const NAV = [
   { label: "ODP", href: "/odp" },
   { label: "Compliance", href: "/compliance" },
   { label: "Differentiation", href: "/differentiation" },
+  { label: "Dashboards", href: "/dashboards" },
   { label: "Stakeholders", href: "/stakeholders" },
 ];
 
