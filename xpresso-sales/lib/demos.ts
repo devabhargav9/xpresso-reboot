@@ -145,6 +145,38 @@ export const DEMOS: Demo[] = [
     milestone: 11,
     status: "planned",
   },
+  {
+    slug: "als/in-class-capture",
+    layer: "ALS",
+    num: 10,
+    title: "In-Class Capture → Daily Class Updates",
+    wow: "Every lecture auto-transcribed and pushed to the course feed — students who miss class still see what was covered, and faculty get a free record of what they actually taught.",
+    steps: [
+      "Faculty starts the lecture — in-room mic streams audio (or join a virtual class). On-screen indicator: 'Capturing for CS101 · Lecture 14 · Faculty: Dr. Rao'.",
+      "Live transcription panel shows the running transcript with speaker labels. Faculty + students see captions in real time.",
+      "Lecture ends. System cleans the transcript (filler words removed, formulas / proper nouns flagged for review) and produces a structured summary: topics covered, examples, references to atoms.",
+      "Faculty reviews the draft in a 'before publish' editor — fix any name / formula / typo. Approve.",
+      "Approved transcript lands in the course feed as a 'Daily class update', searchable per course; absent students get a notification; IQAC sees the new evidence pinned to NAAC Criterion 2.",
+    ],
+    milestone: 1,
+    status: "planned",
+  },
+  {
+    slug: "als/placement-1-click-apply",
+    layer: "ALS",
+    num: 11,
+    title: "Career Hub — 1-click apply with twin-aware prep",
+    wow: "Student goes from 'I saw a drive on WhatsApp' to 'applied + interview prep auto-scheduled by my twin' in 90 seconds — replaces the Google Forms era forever.",
+    steps: [
+      "Student opens Career Hub. Live drives feed shows 5 active drives — already filtered by the eligibility engine (only ones the student qualifies for, with a 'Why these?' tooltip).",
+      "Student clicks the Goldman Sachs drive. Side panel shows the JD, recruiter profile, eligibility breakdown ('You meet 4/4 criteria · CGPA 8.4 ≥ 7.5 · Backlogs 0 ≤ 0 · Branch CSE ✓ · ODP Finance 101 ✓'), key dates, and a one-line 'twin readiness' estimate.",
+      "Student clicks Apply. Profile auto-fills from IMS (CGPA, projects, internships) + EMS (ODP completions, research) into a recruiter-ready resume. Student reviews + edits one project blurb in place. Submits.",
+      "Confirmation screen: 'Applied · 14 days until written test'. The cognitive twin proposes a 4-session prep plan — aptitude (Mon), DSA round 1 (Wed), behavioral mock (Fri), HR mock (Sun) — fitted between existing classes and ODP commitments. One-click 'Add to my path'.",
+      "10 days later, dashboard shows: '3/4 prep sessions complete · readiness score 78%. Written test passed · shortlisted for interview round'. Status tracking now lives in the same place as classes, fees, attendance — no Google Sheets needed.",
+    ],
+    milestone: 4,
+    status: "planned",
+  },
 ];
 
 export function odpDemos() {

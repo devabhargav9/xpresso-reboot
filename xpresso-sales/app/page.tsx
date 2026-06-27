@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Sparkles, ShieldCheck, Layers, Zap } from "lucide-react";
+import { ArrowRight, Sparkles, ShieldCheck, Layers, Zap, Globe } from "lucide-react";
 import { Container } from "@/components/Container";
 import { PyramidHero } from "@/components/PyramidHero";
 import { DemoTile } from "@/components/DemoTile";
@@ -33,7 +33,7 @@ export default function Home() {
                   href="/demo"
                   className="inline-flex items-center gap-1.5 rounded-md bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700"
                 >
-                  See the 9 demos <ArrowRight className="h-4 w-4" />
+                  See the 11 demos <ArrowRight className="h-4 w-4" />
                 </Link>
                 <Link
                   href="/compliance"
@@ -56,6 +56,22 @@ export default function Home() {
                   </Pill>
                 ))}
               </div>
+              <div className="mt-1 flex flex-wrap items-center gap-2 rounded-md border border-emerald-200 bg-emerald-50 px-3 py-2 text-[12px]">
+                <span className="font-semibold uppercase tracking-wider text-emerald-700 text-[10px]">
+                  Recently added
+                </span>
+                <Link href="/demo/als/in-class-capture" className="font-semibold text-emerald-900 hover:underline">
+                  In-class capture
+                </Link>
+                <span className="text-emerald-700">·</span>
+                <Link href="/demo/als/placement-1-click-apply" className="font-semibold text-emerald-900 hover:underline">
+                  Career Hub (1-click apply)
+                </Link>
+                <span className="text-emerald-700">·</span>
+                <Link href="/website-preview" className="font-semibold text-emerald-900 hover:underline">
+                  Institution website preview
+                </Link>
+              </div>
             </div>
             <PyramidHero />
           </div>
@@ -67,13 +83,13 @@ export default function Home() {
           <div className="flex flex-wrap items-end justify-between gap-3">
             <div>
               <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-indigo-600">
-                Nine live demos
+                Eleven live demos
               </span>
               <h2 className="mt-1.5 text-2xl font-semibold tracking-tight text-slate-900 sm:text-[26px]">
-                4 ALS + 4 EMS + 1 flagship ODP — every cutting-edge moment as a clickable simulation.
+                6 ALS + 4 EMS + 1 flagship ODP — every cutting-edge moment as a clickable simulation.
               </h2>
               <p className="mt-2 max-w-3xl text-sm text-slate-600 sm:text-[15px]">
-                ALS demos tell the story of how a student learns. EMS demos tell the story of how knowledge is created and improves. The flagship ODP demo shows all three layers + compliance working together. Each demo is a small scripted flow with mock data.
+                ALS demos tell the story of how a student learns — from cognitive profiling to in-class capture to 1-click placement-drive apply with twin-aware interview prep. EMS demos tell the story of how knowledge is created and improves. The flagship ODP demo shows all three layers + compliance working together. Each demo is a small scripted flow with mock data.
               </p>
             </div>
             <Link
@@ -88,7 +104,7 @@ export default function Home() {
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-2">
                 <Pill tone="als">ALS · How a student learns</Pill>
-                <span className="text-[12px] text-slate-500">Profile → personalize → tutor → assess fairly</span>
+                <span className="text-[12px] text-slate-500">Profile → personalize → tutor → assess fairly → capture every class → land the job</span>
               </div>
               <div className="grid gap-3 sm:grid-cols-2">
                 {als.map((d) => (
@@ -222,6 +238,84 @@ export default function Home() {
 
       <section className="py-14 sm:py-16">
         <Container>
+          <div className="grid gap-8 lg:grid-cols-[1fr_1.2fr] lg:items-center lg:gap-12">
+            <div className="flex flex-col gap-3">
+              <span className="inline-flex w-fit items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-indigo-600">
+                <Globe className="h-3.5 w-3.5" /> The institution's public website
+              </span>
+              <h2 className="text-2xl font-semibold tracking-tight text-slate-900 sm:text-[26px]">
+                Your public website becomes a feature, not a vendor.
+              </h2>
+              <p className="text-[15px] text-slate-600">
+                Every institution needs a public site with NAAC, NIRF, UGC, and AICTE disclosures. With Xpresso, the same data IMS already owns becomes the public surface — and it stays in sync forever. Plan 1 ships the templated site; Plan 2 adds live research feed, ODP catalog, admissions micro-sites, and alumni stories.
+              </p>
+              <div className="mt-2 flex flex-wrap items-center gap-2">
+                <Pill tone="ims">Plan 1: Templated + live disclosures</Pill>
+                <Pill tone="indigo">Plan 2: Research + alumni + admissions</Pill>
+              </div>
+              <Link
+                href="/website-preview"
+                className="mt-3 inline-flex w-fit items-center gap-1.5 rounded-md bg-indigo-600 px-3.5 py-2 text-sm font-semibold text-white hover:bg-indigo-700"
+              >
+                Open the website preview <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+            <div className="overflow-hidden rounded-xl border border-slate-300 bg-white shadow-xl shadow-slate-200/60">
+              <div className="flex items-center gap-2 border-b border-slate-200 bg-slate-100 px-3 py-2">
+                <span className="h-2.5 w-2.5 rounded-full bg-rose-400" />
+                <span className="h-2.5 w-2.5 rounded-full bg-amber-400" />
+                <span className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
+                <div className="ml-2 flex flex-1 items-center justify-center">
+                  <span className="inline-flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-1 text-[11px] text-slate-500">
+                    https://www.bharatheng.ac.in
+                  </span>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-blue-50 via-white to-slate-50 p-6">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <div className="flex h-7 w-7 items-center justify-center rounded-md bg-blue-700 text-white text-[12px] font-semibold">
+                      B
+                    </div>
+                    <span className="text-[12px] font-semibold text-slate-900">Bharath Engineering College</span>
+                  </div>
+                  <span className="rounded-md bg-orange-600 px-2.5 py-1 text-[10px] font-semibold text-white">
+                    Apply 2026
+                  </span>
+                </div>
+                <h3 className="mt-4 text-lg font-semibold leading-tight text-slate-900">
+                  Engineering minds for tomorrow's challenges — since 1985.
+                </h3>
+                <div className="mt-3 grid grid-cols-4 gap-2 text-center">
+                  {[
+                    { v: "4,200", l: "Students" },
+                    { v: "280", l: "Faculty" },
+                    { v: "23", l: "Programs" },
+                    { v: "84%", l: "Placement" },
+                  ].map((s) => (
+                    <div key={s.l} className="rounded-md border border-slate-200 bg-white p-2">
+                      <div className="text-[14px] font-semibold text-blue-800">{s.v}</div>
+                      <div className="text-[9.5px] uppercase tracking-wider text-slate-500">{s.l}</div>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-3 flex flex-wrap items-center gap-1.5 text-[10px]">
+                  <span className="rounded bg-emerald-50 px-1.5 py-0.5 font-semibold text-emerald-700">NAAC A+</span>
+                  <span className="rounded bg-emerald-50 px-1.5 py-0.5 font-semibold text-emerald-700">NIRF 87</span>
+                  <span className="rounded bg-emerald-50 px-1.5 py-0.5 font-semibold text-emerald-700">UGC</span>
+                  <span className="rounded bg-emerald-50 px-1.5 py-0.5 font-semibold text-emerald-700">AICTE</span>
+                  <span className="ml-auto rounded-full bg-indigo-100 px-2 py-0.5 font-semibold text-indigo-800">
+                    Live from IMS
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="py-14 sm:py-16">
+        <Container>
           <div className="flex flex-wrap items-end justify-between gap-3">
             <div>
               <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-indigo-600">
@@ -231,7 +325,7 @@ export default function Home() {
                 Every feature, listed and explained.
               </h2>
               <p className="mt-2 max-w-3xl text-sm text-slate-600 sm:text-[15px]">
-                Beyond the eight demos, every other feature in ALS, EMS, and IMS is browseable below — with compliance tags and stakeholder lens.
+                Beyond the eleven demos, every other feature in ALS, EMS, and IMS is browseable below — with compliance tags and stakeholder lens.
               </p>
             </div>
             <Link

@@ -18,7 +18,7 @@ export default function DemosHub() {
             Click any tile to walk a cutting-edge moment.
           </h1>
           <p className="mt-3 text-[15px] leading-relaxed text-slate-600">
-            Eight ALS + EMS demos plus a flagship cross-cutting ODP demo. Each is a scripted simulation with mock data. The list shows where each demo lands in the build sequence — earlier milestones are pitchable sooner.
+            Six ALS demos + four EMS demos + one flagship cross-cutting ODP demo. Each is a scripted simulation with mock data. The list shows where each demo lands in the build sequence — earlier milestones are pitchable sooner.
           </p>
         </div>
 
@@ -26,7 +26,7 @@ export default function DemosHub() {
           <div className="flex flex-wrap items-center gap-3">
             <Pill tone="als">ALS · How a student learns</Pill>
             <span className="text-[13px] text-slate-500">
-              Profile the learner → personalize the path → teach with a real tutor → assess fairly.
+              Profile the learner → personalize the path → teach with a real tutor → assess fairly → capture every class → land the job.
             </span>
           </div>
           <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">

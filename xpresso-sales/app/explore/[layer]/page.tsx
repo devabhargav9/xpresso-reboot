@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, Globe } from "lucide-react";
 import { Container } from "@/components/Container";
 import { ModuleCard } from "@/components/ModuleCard";
 import { Pill } from "@/components/Pill";
@@ -51,6 +51,33 @@ export default async function LayerPage({
         <p className="mt-3 max-w-3xl text-[13px] text-slate-500">
           {data.longDescription}
         </p>
+
+        {data.code === "IMS" && (
+          <Link
+            href="/website-preview"
+            className="mt-7 flex flex-col gap-3 rounded-xl border border-indigo-200 bg-gradient-to-br from-indigo-50 via-white to-blue-50 p-4 transition hover:border-indigo-300 sm:flex-row sm:items-center sm:justify-between"
+          >
+            <div className="flex items-start gap-3">
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-indigo-200 bg-white text-indigo-700">
+                <Globe className="h-4 w-4" />
+              </div>
+              <div>
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-[14px] font-semibold text-slate-900">
+                    See the auto-generated institution website
+                  </span>
+                  <Pill tone="indigo">live preview</Pill>
+                </div>
+                <p className="mt-1 text-[12.5px] leading-relaxed text-slate-600">
+                  The Institution Website module ships a full public-facing site auto-populated from IMS and EMS data. Open the preview to see what your institution's website would look like.
+                </p>
+              </div>
+            </div>
+            <span className="inline-flex shrink-0 items-center gap-1 self-end rounded-md bg-indigo-600 px-3 py-1.5 text-[12px] font-semibold text-white shadow-sm group-hover:bg-indigo-700 sm:self-center">
+              Open preview <ArrowUpRight className="h-3 w-3" />
+            </span>
+          </Link>
+        )}
 
         <div className="mt-8 flex flex-col gap-3">
           {data.modules.map((m, i) => (
