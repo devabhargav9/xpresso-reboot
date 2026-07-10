@@ -267,17 +267,19 @@ export default function Home() {
                 <span className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
                 <div className="ml-2 flex flex-1 items-center justify-center">
                   <span className="inline-flex items-center gap-1.5 rounded-md border border-slate-200 bg-white px-3 py-1 text-[11px] text-slate-500">
-                    https://www.srisai.ac.in
+                    https://www.indiraiim.ac.in
                   </span>
                 </div>
               </div>
               <div className="bg-gradient-to-br from-blue-50 via-white to-slate-50 p-6">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <div className="flex h-7 w-7 items-center justify-center rounded-md bg-blue-700 text-white text-[11px] font-semibold">
-                      SS
-                    </div>
-                    <span className="text-[12px] font-semibold text-slate-900">Sri Sai Institute of Technology and Science</span>
+                    <img
+                      src="/indira-logo.jpg"
+                      alt="Indira Institute of Management"
+                      className="h-8 w-8 rounded-full object-cover ring-1 ring-slate-200"
+                    />
+                    <span className="text-[12px] font-semibold text-slate-900">Indira Institute of Management</span>
                   </div>
                   <span className="rounded-md bg-orange-600 px-2.5 py-1 text-[10px] font-semibold text-white">
                     Apply 2026
