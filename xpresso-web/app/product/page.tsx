@@ -314,6 +314,66 @@ const FRAMEWORK_TABLE = [
     coverage:
       "Infrastructure, intake and approval data — formatted, validated, exported.",
   },
+  {
+    framework: "NEP 2020",
+    purpose: "Policy alignment",
+    coverage:
+      "Multidisciplinary programs, credit-based flexibility, multiple entry-exit points, holistic education.",
+  },
+  {
+    framework: "NCrF",
+    purpose: "National Credit Framework",
+    coverage:
+      "Unified credit mapping across school, higher-ed and skilling — every program pre-tagged for credit portability.",
+  },
+  {
+    framework: "ABC",
+    purpose: "Academic Bank of Credits",
+    coverage:
+      "Automated per-semester credit push to student's ABC account. Lifetime credit wallet, no manual entry.",
+  },
+  {
+    framework: "DigiLocker / NAD",
+    purpose: "Digital credentials",
+    coverage:
+      "Degrees, transcripts and mark sheets issued to DigiLocker + NAD. Instant recruiter / university verification.",
+  },
+  {
+    framework: "IIC",
+    purpose: "Innovation Council",
+    coverage:
+      "Composition, MoMs, quarterly activity reporting and star-rating submission — fed from operational data.",
+  },
+  {
+    framework: "NISP",
+    purpose: "Startup policy",
+    coverage:
+      "Institutional startup policy governance, IP disclosures, faculty-startup engagement register.",
+  },
+  {
+    framework: "ISO 21001",
+    purpose: "Educational management standard",
+    coverage:
+      "Documented processes, risk register, learner-needs and continual-improvement workflows — audit-ready.",
+  },
+  {
+    framework: "IQAC",
+    purpose: "Internal quality cell",
+    coverage:
+      "Composition + MoMs + criterion tracking + live AQAR / SSR / SAR builders + DVV support.",
+  },
+  {
+    framework: "Green Audit",
+    purpose: "Environment & sustainability",
+    coverage:
+      "Energy, water, waste, air, biodiversity — recurring audit trails feed NAAC criterion 7 automatically.",
+  },
+  {
+    framework: "Academic Audit",
+    purpose: "Continuous academic review",
+    coverage:
+      "Program-wise attainment, syllabus completion, curriculum review, peer audit — perpetual, not annual.",
+  },
 ];
 
 function ComplianceDeepDive() {

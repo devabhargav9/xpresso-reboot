@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import clsx from "clsx";
 
-type Tone = "neutral" | "indigo" | "als" | "ems" | "ims" | "soft";
+type Tone = "neutral" | "indigo" | "als" | "ems" | "ims" | "soft" | "emerald";
 
 export function Pill({
   children,
@@ -23,6 +23,7 @@ export function Pill({
     ems: "border-violet-200 bg-violet-50 text-violet-700",
     ims: "border-amber-200 bg-amber-50 text-amber-700",
     soft: "border-slate-200 bg-slate-50 text-slate-600",
+    emerald: "border-emerald-300 bg-emerald-100 text-emerald-800",
   };
   return (
     <span

@@ -9,6 +9,39 @@ export const FRAMEWORKS: Framework[] = [
   "AICTE",
 ];
 
+// Extended frameworks — emerging digital, policy and audit compliance layers.
+// Kept separate from the core Framework type so the 8×6 matrix stays readable.
+export type ExtendedFramework =
+  | "NEP2020"
+  | "NCrF"
+  | "ABC"
+  | "DigiLocker"
+  | "IIC"
+  | "NISP"
+  | "ISO21001"
+  | "IQAC"
+  | "GreenAudit"
+  | "AcademicAudit";
+
+export const EXTENDED_FRAMEWORKS: ExtendedFramework[] = [
+  "NEP2020",
+  "NCrF",
+  "ABC",
+  "DigiLocker",
+  "IIC",
+  "NISP",
+  "ISO21001",
+  "IQAC",
+  "GreenAudit",
+  "AcademicAudit",
+];
+
+export type ExtendedFrameworkGroup =
+  | "digital-credentials"
+  | "innovation-startup"
+  | "quality-standard"
+  | "internal-audit";
+
 export type Stakeholder =
   | "Student"
   | "Faculty"

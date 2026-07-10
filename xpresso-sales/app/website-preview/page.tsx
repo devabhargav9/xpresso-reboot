@@ -64,7 +64,7 @@ export default function WebsitePreviewPage() {
         </div>
 
         <div className="mt-6">
-          <DashboardFrame url="https://www.bharatheng.ac.in">
+          <DashboardFrame url="https://www.srisai.ac.in">
             <InstitutionWebsiteMock />
           </DashboardFrame>
         </div>

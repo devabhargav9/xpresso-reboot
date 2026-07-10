@@ -10,6 +10,16 @@ const FRAMEWORKS = [
   { name: "AISHE", coverage: "Full reporting" },
   { name: "UGC", coverage: "Full reporting" },
   { name: "AICTE", coverage: "Full reporting" },
+  { name: "NEP 2020", coverage: "Multidisciplinary + exit-entry" },
+  { name: "NCrF", coverage: "Unified credit mapping" },
+  { name: "ABC", coverage: "Credit push every semester" },
+  { name: "DigiLocker / NAD", coverage: "Verifiable credentials" },
+  { name: "IIC", coverage: "Innovation cell reporting" },
+  { name: "NISP", coverage: "Startup policy alignment" },
+  { name: "ISO 21001", coverage: "International standard" },
+  { name: "IQAC", coverage: "AQAR live builder" },
+  { name: "Green Audit", coverage: "Energy · water · waste" },
+  { name: "Academic Audit", coverage: "Attainment + peer review" },
 ];
 
 const REPLACES = [
